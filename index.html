@@ -1,21 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js-biglietto-trenot</title>
+
+
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- linck personale style -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
-<body>
 
-<h1></h1>
+<body class=" bg-body-tertiary">
+    <div class="container d-flex justify-content-center vh-100 p-0">
+
+        <div class="row d-flex align-self-center border rounded-2 w-100 max-wh-500 bg-white shadow  ">
+
+            <div class="border bg-danger p-0 text-center rounded-top-2 d-flex align-items-center justify-content-center">
+                <h3 class="text-white m-0 text-capitalize p-3">crea il tuo biglietto</h3>
+            </div>
+
+            <div class="d-flex justify-content-around mt-4"> 
+
+                <span class="color-verde text-capitalize fst-italic">sconto del <span class="link-danger">20% </span> under 18 </span>
+
+                <span class="color-verde text-capitalize fst-italic">sconto del <span class="link-danger">40% </span> over 65</span>
+
+            </div>
+            <div class=" d-flex justify-content-center mt-4">
+                <span class="color-verde text-capitalize fst-italic">Tariffa fissa: <span class="link-danger"> 0.21 €/km.</span></span>
+            </div>
+            <form id="form-biglietto" class="p-4">
+               
+
+                <div class="mb-3 col">
+
+                    <label for="viaggio" class="form-label brg-rosso fs-4">Chilomentri da percorrere</label>
+
+                    <input type="text" class="form-control w-100" id="viaggio" aria-describedby="emailHelp">
+
+                </div>
+
+                <div class="mb-4 col">
+
+                    <label for="eta" class="form-label brg-rosso fs-4">Età</label>
+
+                    <input type="text" class="form-control w-100" id="eta">
+
+                </div>
+
+                <div class="col">
+                    <input type="submit" name="" id="biglietto"
+                        class="border rounded-3 p-2 brg-verde text-white w-100 ">
+                </div>
+
+            </form>
+
+            <div class="mb-3 col p-3">
+
+                <div class="border rounded-3 p-1 ">
+                    <label for="totale" class="form-label m-0 p-1"> Prezzo del biglietto: <span id="totale" class="">
+                        </span></label>
+
+                </div>
+              
+            </div>
+            <div class="pb-5 brg-rosso d-flex justify-content-center h-10px">
+                <span class="d-none text-capitalize " id="warning"><strong>attenzione ai borseggiatori ❗</strong></span>
+            </div>
+        </div>
+    </div>
 
 
 
 
 
+
+
+
+
+
+
+    <!-- script personal -->
     <script src="./assets/js/main.js">
     </script>
-    
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+
+
 </body>
+
 </html>

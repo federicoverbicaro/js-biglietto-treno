@@ -1,0 +1,20 @@
+.brg-verde{
+    background-color: rgb(0,107,103);
+}
+.color-verde{
+    color: rgb(0,107,103);
+}
+
+.brg-rosso{
+    color: rgb(226,24,53);
+}
+
+.max-wh-500 {
+    max-width:500px;
+    height:650px;
+}
+
+.h-10px{
+ 
+    height:10px;
+}
